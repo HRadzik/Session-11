@@ -1,0 +1,28 @@
+#Hubert Radzik
+last_names = ["Smith", "Johnson", "Brown", "Taylor", "Anderson",
+      "Thomas", "Jackson", "White", "Harris", "Martin"]
+
+exam_scores = [88.5, 92.0, 76.5, 85.0, 90.5,
+       78.0, 84.5, 91.0, 87.5, 93.0]
+
+def find_high_low(): 
+    high_var = 0
+    low_var = 999
+
+    high_index = 0
+    low_index = 0
+
+    for i in range(0, len(exam_scores)):
+        if exam_scores[i] > high_var:
+         high_var = exam_scores[i]
+         high_index = i
+
+    if exam_scores[i] < low_var:
+        low_var = exam_scores[i]
+        low_index = i
+
+    print("Highest:", last_names[high_index], high_var)
+    print("Lowest:", last_names[low_index], low_var)
+
+# Main
+find_high_low()
