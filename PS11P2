@@ -1,0 +1,19 @@
+#Hubert Radzik
+last_names = ["Smith", "Johnson", "Brown", "Taylor", "Anderson",
+      "Thomas", "Jackson", "White", "Harris", "Martin"]
+
+exam_scores = [88.5, 92.0, 76.5, 85.0, 90.5,
+       78.0, 84.5, 91.0, 87.5, 93.0]
+
+def display_data():
+    for i in range(0, len(last_names)):
+        print(last_names[i], exam_scores[i])
+
+def display_data_reverse():
+    for i in range(len(last_names) - 1, -1, -1):
+        print(last_names[i], exam_scores[i])
+
+# Main
+display_data()
+print("----- Reverse -----")
+display_data_reverse()
