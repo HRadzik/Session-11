@@ -1,0 +1,35 @@
+#Hubert Radzik
+names = []
+averages = []
+
+# Load file
+file = open("players.txt", "r")
+
+for line in file:
+    data = line.split()
+    names.append(data[0])
+    averages.append(float(data[1]))
+
+file.close()
+
+def display_players():
+    for i in range(0, len(names)):
+        print(names[i], averages[i])
+
+def search_player(target):
+    for i in range(0, len(names)):
+        if names[i].lower() == target.lower():
+            print(names[i], averages[i])
+            return
+    print("Name not found")
+
+# Main
+display_players()
+
+while True:
+    user_input = input("Enter last name (or quit): ")
+
+    if user_input.lower() == "quit":
+        break
+
+    search_player(user_input)
