@@ -1,0 +1,16 @@
+#Hubert Radzik
+last_names = ["Smith", "Johnson", "Brown", "Taylor", "Anderson",
+      "Thomas", "Jackson", "White", "Harris", "Martin"]
+
+def display_names():
+    for i in range(0, len(last_names)):
+        print(last_names[i])
+
+def display_names_reverse():
+    for i in range(len(last_names) - 1, -1, -1):
+        print(last_names[i])
+
+# Main
+display_names()
+print("----- Reverse -----")
+display_names_reverse()
